@@ -1,0 +1,20 @@
+# Ignorar carpetas de compilacion
+
+bin/
+obj/
+
+# Visual Studio
+
+.vs/
+*.user
+*.suo
+
+# Archivos temporales
+
+*.log
+*.tmp
+*.cache
+
+# Publicaciones
+
+publish/
