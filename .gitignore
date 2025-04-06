@@ -18,3 +18,5 @@ obj/
 # Publicaciones
 
 publish/
+packages
+packages/
