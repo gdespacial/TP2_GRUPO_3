@@ -24,13 +24,8 @@
             <br />
             <asp:RequiredFieldValidator ID="rfvProdUno" runat="server" ControlToValidate="txtProdUno" ErrorMessage="RequiredFieldValidator">Debe ingresar un producto en el primer campo.</asp:RequiredFieldValidator>
         </div>
-        <p>
-            &nbsp;</p>
-        <p>
-            &nbsp;</p>
-        <p>
-            &nbsp;</p>
-        <p>
+        <asp:Label ID="lblTabla" runat="server" Text=""></asp:Label>
+       <br />
             <asp:Button ID="btnTabla" runat="server" OnClick="btnTabla_Click" Text="Generar Tabla" />
         </p>
     </form>
