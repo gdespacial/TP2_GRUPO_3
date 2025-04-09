@@ -15,7 +15,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyCulture("")]
 
 // Si ComVisible se establece en false, los componentes COM no verán los 
-// tipos de este ensamblado. Si necesita obtener acceso a un tipo de este ensamblado desde 
+//// tipos de este ensamblado. Si necesita obtener acceso a un tipo de este ensamblado desde 
 // COM, establezca el atributo ComVisible en true en este tipo.
 [assembly: ComVisible(false)]
 

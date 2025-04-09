@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace TP2_GRUPO_3
 {
@@ -17,9 +13,9 @@ namespace TP2_GRUPO_3
 
         protected void btnTabla_Click(object sender, EventArgs e)
         {
-           // Descomentar el código y continuar, para que compile bien. Gabriel.
-            
-            
+            // Descomentar el código y continuar, para que compile bien. Gabriel.
+
+
             int cantidadUno = int.Parse(txtCantUno.Text);  // Castear los números ingresados en los textBoxs de cantidades.
             int cantidadDos = int.Parse(txtCantDos.Text);
             int total = cantidadUno + cantidadDos; // Esta linita de código me va a servir para que sume y no concatene las cant.
