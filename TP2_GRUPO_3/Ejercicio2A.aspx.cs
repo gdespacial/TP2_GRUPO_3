@@ -11,7 +11,8 @@ namespace TP2_GRUPO_3
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Page.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
+            // Esta linea de codigo me permite usar controles de validación SIN USAR JQUERY. G.
         }
 
 
@@ -24,7 +25,18 @@ namespace TP2_GRUPO_3
 
             /// Nos lleva al formulario del Ejercicio2B
             
-            Response.Redirect("Ejercicio2B.aspx");
+            string temas = ""; // Aca voy a guardar los temas seleccionados en el checkbox, con un loop ForEach. G.
+            foreach(ListItem item in cblTemas.Items)
+            {
+                if(item.Selected)
+                {
+                    temas += item.Text + " | "; // Para agregar un salto de línea.
+                }
+            }
+
+            temas = Server.UrlEncode(temas.TrimEnd('|'));  // Necesario para que el dato String no rompa la Url durante la redirección.
+
+            Response.Redirect("Ejercicio2B.aspx?cblTemas=" + temas); // Le agrego al redirect lo que acabamos de hacer.
         }
     }
 }

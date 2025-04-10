@@ -78,6 +78,12 @@
                 </td>
             </tr>
         </table>
+        <p>
+            <asp:RequiredFieldValidator ID="rfvNombre" runat="server" ControlToValidate="txtNombre" ErrorMessage="RequiredFieldValidator">Debe ingresar un nombre.</asp:RequiredFieldValidator>
+        </p>
+        <p>
+            <asp:RequiredFieldValidator ID="rfvApellido" runat="server" ControlToValidate="txtApellido" ErrorMessage="RequiredFieldValidator">Debe ingresar un apellido.</asp:RequiredFieldValidator>
+        </p>
     </form>
 </body>
 </html>

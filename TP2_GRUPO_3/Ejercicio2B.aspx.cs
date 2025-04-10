@@ -11,13 +11,19 @@ namespace TP2_GRUPO_3
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Page.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
+            // Esta linea de codigo me permite usar controles de validación SIN USAR JQUERY.
+
             if (!IsPostBack)
             {
                 string nombre = Session["Nombre"] as string;
                 string apellido = Session["Apellido"] as string;
-
+                string temasSeleccionados = Request.QueryString["cblTemas"]; // Crear variable string, para guardar el request.
+                temasSeleccionados = Server.UrlDecode(temasSeleccionados); // Para que no haya problemas con traspaso de texto en la URL.
+                temasSeleccionados = temasSeleccionados.Replace("|", "<br/>"); // SALTO DE LINEA!
                 lblNombre.Text = "Nombre: " + nombre;
                 lblApellido.Text = "Apellido: " + apellido;
+                lblTemas.Text = temasSeleccionados; // Mostrar los items del checkbox en un nuevo label. G.
             }
         }
     }
