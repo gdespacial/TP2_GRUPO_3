@@ -27,6 +27,9 @@
             <asp:Label ID="lblApellido" runat="server" Font-Names="Arial" Font-Size="Large" Text="Label"></asp:Label>
             <br />
             <br />
+             <asp:Label ID="lblZona" runat="server" Font-Names="Arial" Font-Size="Large" Text="Label"></asp:Label>
+            <br />
+<br />
             Los temas elegidos son:</div>
         <p>
             <asp:Label ID="lblTemas" runat="server"></asp:Label>

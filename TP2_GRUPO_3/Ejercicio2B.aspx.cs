@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Policy;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -18,11 +19,14 @@ namespace TP2_GRUPO_3
             {
                 string nombre = Session["Nombre"] as string;
                 string apellido = Session["Apellido"] as string;
+                string zona = Request.QueryString["ddlCiudad"];
+                zona = Server.UrlDecode(zona); // Para que no haya problemas con traspaso de texto en la URL.
                 string temasSeleccionados = Request.QueryString["cblTemas"]; // Crear variable string, para guardar el request.
                 temasSeleccionados = Server.UrlDecode(temasSeleccionados); // Para que no haya problemas con traspaso de texto en la URL.
                 temasSeleccionados = temasSeleccionados.Replace("|", "<br/>"); // SALTO DE LINEA!
                 lblNombre.Text = "Nombre: " + nombre;
                 lblApellido.Text = "Apellido: " + apellido;
+                lblZona.Text = "Zona: " + zona;
                 lblTemas.Text = temasSeleccionados; // Mostrar los items del checkbox en un nuevo label. G.
             }
         }
