@@ -22,7 +22,7 @@ namespace TP2_GRUPO_3
 
             if (usuario == "claudio" && clave == "casas")
             {
-                Server.Transfer("Ejercicio4C.aspx");
+                Server.Transfer("Ejercicio4B.aspx");
             }
             else
             {
