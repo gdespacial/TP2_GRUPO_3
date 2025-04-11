@@ -11,7 +11,7 @@ namespace TP2_GRUPO_3
 {
 
 
-    public partial class Ejercicio2B
+    public partial class Ejercicio5
     {
 
         /// <summary>
@@ -24,48 +24,66 @@ namespace TP2_GRUPO_3
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Controllo lblResumen.
+        /// Controllo lblTitulo.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblResumen;
+        protected global::System.Web.UI.WebControls.Label lblTitulo;
 
         /// <summary>
-        /// Controllo lblNombre.
+        /// Controllo lblMemoria.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblNombre;
+        protected global::System.Web.UI.WebControls.Label lblMemoria;
 
         /// <summary>
-        /// Controllo lblApellido.
+        /// Controllo ddlMemoria.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblApellido;
+        protected global::System.Web.UI.WebControls.DropDownList ddlMemoria;
 
         /// <summary>
-        /// Controllo lblZona.
+        /// Controllo lblAccesorios.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblZona;
+        protected global::System.Web.UI.WebControls.Label lblAccesorios;
 
         /// <summary>
-        /// Controllo lblTemas.
+        /// Controllo chkAccesorios.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTemas;
+        protected global::System.Web.UI.WebControls.CheckBoxList chkAccesorios;
+
+        /// <summary>
+        /// Controllo btnCalcular.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnCalcular;
+
+        /// <summary>
+        /// Controllo lblResultado.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblResultado;
     }
 }
