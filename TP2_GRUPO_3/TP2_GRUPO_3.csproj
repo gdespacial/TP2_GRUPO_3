@@ -13,7 +13,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TP2_GRUPO_3</RootNamespace>
     <AssemblyName>TP2_GRUPO_3</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
     <IISExpressSSLPort>44317</IISExpressSSLPort>
@@ -65,12 +65,23 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Ejercicio4C.aspx" />
     <Content Include="ejercicio1.aspx" />
     <Content Include="Ejercicio2A.aspx" />
     <Content Include="Ejercicio2B.aspx" />
+    <Content Include="Ejercicio3.aspx" />
+    <Content Include="Ejercicio4.aspx" />
+    <Content Include="Ejercicio4B.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ejercicio4C.aspx.cs">
+      <DependentUpon>Ejercicio4C.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ejercicio4C.aspx.designer.cs">
+      <DependentUpon>Ejercicio4C.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ejercicio1.aspx.cs">
       <DependentUpon>ejercicio1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -91,6 +102,27 @@
     </Compile>
     <Compile Include="Ejercicio2B.aspx.designer.cs">
       <DependentUpon>Ejercicio2B.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ejercicio3.aspx.cs">
+      <DependentUpon>Ejercicio3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ejercicio3.aspx.designer.cs">
+      <DependentUpon>Ejercicio3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ejercicio4.aspx.cs">
+      <DependentUpon>Ejercicio4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ejercicio4.aspx.designer.cs">
+      <DependentUpon>Ejercicio4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ejercicio4B.aspx.cs">
+      <DependentUpon>Ejercicio4B.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ejercicio4B.aspx.designer.cs">
+      <DependentUpon>Ejercicio4B.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
