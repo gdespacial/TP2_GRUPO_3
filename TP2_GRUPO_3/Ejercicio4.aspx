@@ -13,6 +13,7 @@
         </div>
         <p>
             Usuario:<asp:TextBox ID="txtUsuario" runat="server" style="margin-left: 10px"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="rfvUsuario" runat="server" ControlToValidate="txtUsuario" ErrorMessage="RequiredFieldValidator">Debe ingresar un usuario.</asp:RequiredFieldValidator>
         </p>
         <p>
             Clave:<asp:TextBox ID="txtClave" runat="server" style="margin-left: 22px" TextMode="Password"></asp:TextBox>
