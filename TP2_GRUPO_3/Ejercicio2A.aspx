@@ -35,31 +35,43 @@
             padding: 8px;
             height: 139px;
         }
+        .auto-style3 {
+            width: 363px;
+            margin-left: 100px;
+            margin-top: 40px;
+            border-collapse: collapse;
+            height: 350px;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
-        <table class="tabla-formulario">
+        <table class="auto-style3">
             <tr>
                 <td class="etiqueta">Nombre:</td>
                 <td class="campo">
                     <asp:TextBox ID="txtNombre" runat="server" Width="250px" />
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtNombre" ErrorMessage="RequiredFieldValidator">Debe ingresar un nombre.</asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
                 <td class="etiqueta">Apellido:</td>
                 <td class="campo">
                     <asp:TextBox ID="txtApellido" runat="server" Width="250px" />
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtApellido" ErrorMessage="RequiredFieldValidator">Debe ingresar un apellido.</asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
                 <td class="etiqueta">Ciudad:</td>
                 <td class="campo">
                     <asp:DropDownList ID="ddlCiudad" runat="server" Width="256px">
+                        <asp:ListItem>--Seleccionar Ciudad--</asp:ListItem>
                         <asp:ListItem Value="zona norte">Gral. Pacheco</asp:ListItem>
                         <asp:ListItem Value="zona oeste">San Miguel</asp:ListItem>
                         <asp:ListItem Value="zona sur">Boedo</asp:ListItem>
                     </asp:DropDownList>
+                    <asp:RequiredFieldValidator ID="ddlValidator" runat="server" ControlToValidate="ddlCiudad" ErrorMessage="RequiredFieldValidator" InitialValue="--Seleccionar Ciudad--">Debe ingresar una ciudad.</asp:RequiredFieldValidator>
+
                 </td>
             </tr>
             <tr>
@@ -78,12 +90,6 @@
                 </td>
             </tr>
         </table>
-        <p>
-            <asp:RequiredFieldValidator ID="rfvNombre" runat="server" ControlToValidate="txtNombre" ErrorMessage="RequiredFieldValidator">Debe ingresar un nombre.</asp:RequiredFieldValidator>
-        </p>
-        <p>
-            <asp:RequiredFieldValidator ID="rfvApellido" runat="server" ControlToValidate="txtApellido" ErrorMessage="RequiredFieldValidator">Debe ingresar un apellido.</asp:RequiredFieldValidator>
-        </p>
     </form>
 </body>
 </html>

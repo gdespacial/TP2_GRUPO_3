@@ -1,10 +1,10 @@
 ﻿//------------------------------------------------------------------------------
-// <generato automaticamente>
-//     Questo codice è stato generato da uno strumento.
+// <generado automáticamente>
+//     Este código fue generado por una herramienta.
 //
-//     Le modifiche a questo file possono causare un comportamento non corretto e verranno perse se
-//     il codice viene rigenerato. 
-// </generato automaticamente>
+//     Los cambios en este archivo podrían causar un comportamiento incorrecto y se perderán si
+//     se vuelve a generar el código. 
+// </generado automáticamente>
 //------------------------------------------------------------------------------
 
 namespace TP2_GRUPO_3
@@ -15,56 +15,56 @@ namespace TP2_GRUPO_3
     {
 
         /// <summary>
-        /// Controllo form1.
+        /// Control form1.
         /// </summary>
         /// <remarks>
-        /// Campo generato automaticamente.
-        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Controllo lblResumen.
+        /// Control lblResumen.
         /// </summary>
         /// <remarks>
-        /// Campo generato automaticamente.
-        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblResumen;
 
         /// <summary>
-        /// Controllo lblNombre.
+        /// Control lblNombre.
         /// </summary>
         /// <remarks>
-        /// Campo generato automaticamente.
-        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblNombre;
 
         /// <summary>
-        /// Controllo lblApellido.
+        /// Control lblApellido.
         /// </summary>
         /// <remarks>
-        /// Campo generato automaticamente.
-        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblApellido;
 
         /// <summary>
-        /// Controllo lblZona.
+        /// Control lblZona.
         /// </summary>
         /// <remarks>
-        /// Campo generato automaticamente.
-        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblZona;
 
         /// <summary>
-        /// Controllo lblTemas.
+        /// Control lblTemas.
         /// </summary>
         /// <remarks>
-        /// Campo generato automaticamente.
-        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblTemas;
     }
