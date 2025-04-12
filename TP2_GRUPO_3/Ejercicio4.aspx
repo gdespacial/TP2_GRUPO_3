@@ -17,6 +17,7 @@
         </p>
         <p>
             Clave:<asp:TextBox ID="txtClave" runat="server" style="margin-left: 22px" TextMode="Password"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="rfvClave" runat="server" ControlToValidate="txtClave" ErrorMessage="RequiredFieldValidator">Debe ingresar una clave.</asp:RequiredFieldValidator>
         </p>
         <p>
             <asp:Button ID="Button1" runat="server" Height="22px" OnClick="Button1_Click" style="margin-left: 64px" Text="Validar" Width="90px" />
