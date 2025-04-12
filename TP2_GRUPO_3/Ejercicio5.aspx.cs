@@ -18,6 +18,7 @@ namespace TP2_GRUPO_3
             {
                 // Opciones de memoria
                 ListItemCollection memoria = new ListItemCollection();
+                memoria.Add(new ListItem("Seleccione una cantidad de memoria", "0"));
                 memoria.Add(new ListItem("2GB", "200")); /// Texto que se ve, y el valor que usamos para calcular
                 memoria.Add(new ListItem("4GB", "375"));
                 memoria.Add(new ListItem("6GB", "500"));

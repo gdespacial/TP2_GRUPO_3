@@ -38,6 +38,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:DropDownList ID="ddlMemoria" runat="server" Font-Bold="True" Font-Size="14pt" Width="211px">
             </asp:DropDownList>
+            <asp:RequiredFieldValidator ID="rfvDdlMemoria" runat="server" ControlToValidate="ddlMemoria" ErrorMessage="Seleccione una cantidad de memoria" InitialValue="0">Seleccione una cantidad de memoria.</asp:RequiredFieldValidator>
             <br />
             <br />
             <br />
@@ -67,7 +68,7 @@
             <br />
             <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Label ID="lblResultado" runat="server" Font-Bold="True" Font-Size="16pt" Text="Label"></asp:Label>
+            <asp:Label ID="lblResultado" runat="server" Font-Bold="True" Font-Size="16pt"></asp:Label>
         </div>
     </form>
 </body>
